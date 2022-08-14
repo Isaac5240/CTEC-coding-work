@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MangAmazing</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <style> 
+        body {
+          background-image: url("images/background-image.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+</head>
+
+<body onload="getMangaData()">
+    <!-- Include header here -->
+    <div w3-include-html="header.html"></div>
+    <!-- This is the container that holds the heading, restaurant and user stuff -->
+    <div class="container">
+        <!-- Displays pictures of the manga here -->
+        <div id="mangaTable" class="row"></div>
+    </div>
+
+    <!-- Include the manga modal here-->
+    <div w3-include-html="manga-modal.html"></div>
+
+    <!-- Include the message modal here-->
+    <div w3-include-html="message-modal.html"></div>
+
+    <!-- Include the character modal here -->
+    <div w3-include-html="characters-modal.html"></div>
+
+</body>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/86ec7c1143.js" ></script>
+<script src="js/app.js"></script>
+<script src="js/manga.js"></script>
+<script src="js/message.js"></script>
+
+
+</html>
